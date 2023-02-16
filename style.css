@@ -1,10 +1,10 @@
 /* importing google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -21,6 +21,15 @@ body {
   transform: translate(-50%, -50%);
   box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
     0px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s ease;
+}
+
+.info_box.activeInfo,
+.quiz_box.activeQuiz {
+  z-index: 5;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .start_btn button {
@@ -83,6 +92,7 @@ body {
   margin: 0 5px;
   height: 40px;
   width: 100px;
+  outline: none;
   border: 1px solid #007bff;
   border-radius: 5px;
   color: #fff;
@@ -111,7 +121,6 @@ body {
 }
 
 .quiz_box {
-  /* display: none; */
   width: 550px;
   background: #fff;
   border-radius: 5px;
@@ -173,6 +182,7 @@ body {
 .quiz_box section {
   padding: 25px 30px 20px 30px;
   background: #fff;
+  border-bottom: 1px solid lightgrey;
 }
 
 .quiz_box section .que_text {
@@ -230,6 +240,22 @@ section .option_list .option:hover {
   color: #a42834;
   background: #f8d7da;
   border-color: #a42834;
+}
+
+.option_list .option.correct {
+  color: #155724;
+  background: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.option_list .option.incorrect {
+  color: #721c24;
+  background: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.option_list .option.disabled {
+  pointer-events: none;
 }
 
 .quiz_box footer {
