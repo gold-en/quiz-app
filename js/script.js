@@ -68,21 +68,27 @@ const showQuestions = index => {
   }
 };
 
+let tickIcon = '<div class="icon tick"><i class="fas fa-check"></i></div>';
+let crossIcon = '<div class="icon cross"><i class="fas fa-times"></i></div>';
+
 const optionSelected = answer => {
   let userAns = answer.textContent.trim();
   let correctAns = questions[que_count].answer.trim();
   let allOptions = option_list.children.length;
   if (userAns == correctAns) {
     answer.classList.add('correct');
-    console.log('Answer is correct');
+    console.log(answer);
+    answer.insertAdjacentHTML('beforeend', tickIcon);
   } else {
     answer.classList.add('incorrect');
+    answer.insertAdjacentHTML('beforeend', crossIcon);
     console.log('Answer is wrong');
 
     //if answer is incorrect then automatically select the correct answer
     for (let i = 0; i < allOptions; i++) {
       if (option_list.children[i].textContent.trim() === correctAns) {
         option_list.children[i].setAttribute('class', 'option correct');
+        option_list.children[i].insertAdjacentHTML('beforeend', tickIcon);
       }
     }
   }
