@@ -148,4 +148,106 @@ let questions = [
       'var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue")',
     ],
   },
+  {
+    numb: 16,
+    question: 'How do you round the number 7.25, to the nearest integer?',
+    answer: 'Math.round(7.25)',
+    options: ['Math.round(7.25)', 'rnd(7.25)', 'Math.rnd(7.25)', 'round(7.25)'],
+  },
+  {
+    numb: 17,
+    question: 'How do you find the number with the highest value of x and y?',
+    answer: 'Math.max(x,y)',
+    options: ['top(x,y)', 'Math.max(x,y)', 'Math.ceil(x,y)', 'ceil(x,y)'],
+  },
+  {
+    numb: 18,
+    question:
+      'What is the correct JavaScript syntax for opening a new window called "w2"?',
+    answer: 'w2=window.open("http://www.w3schools.com")',
+    options: [
+      'w2=window.new("http://www.w3schools.com")',
+      'w2=window.open("http://www.w3schools.com")',
+      'AOTA',
+      'NOTA',
+    ],
+  },
+  {
+    numb: 19,
+    question: 'JavaScript is the same as Java',
+    answer: 'False',
+    options: ['True', 'False', 'It depends', 'AOTA'],
+  },
+  {
+    numb: 20,
+    question: "How can you detect the client's browser name?",
+    answer: 'navigator.appName',
+    options: ['client.navName', 'browser.name', 'navigator.appName', 'NOTA'],
+  },
+  {
+    numb: 21,
+    question: 'Which event occurs when the user clicks on an HTML element?',
+    answer: 'onclick',
+    options: ['onmouseclick', 'onchange', 'onclick', 'onmouseover'],
+  },
+  {
+    numb: 22,
+    question: 'How do you declare a JavaScript variable?',
+    answer: 'var carName',
+    options: ['v carName', 'var carName', 'variable carName', 'carName'],
+  },
+  {
+    numb: 23,
+    question: 'Which operator is used to assign a value to a variable?',
+    answer: '=',
+    options: ['x', '*', '==', '='],
+  },
+  {
+    numb: 24,
+    question: 'What will the following code return:\n Boolean(10 > 9)?',
+    answer: 'true',
+    options: ['true', 'false', 'NaN', 'AOTA'],
+  },
+  {
+    numb: 25,
+    question: 'Is JavaScript case-sensitive?',
+    answer: 'Yes',
+    options: ['No', 'Yes', 'Sometimes', 'NOTA'],
+  },
+  {
+    numb: 26,
+    question: 'JavaScript File has an extension of:',
+    answer: '.js',
+    options: ['.java', '.js', '.javascript', '.xml'],
+  },
+  {
+    numb: 27,
+    question:
+      'which statement cannot be used to declare a variable in JavaScript?',
+    answer: 'int',
+    options: ['let', 'var', 'int', 'const'],
+  },
+  {
+    numb: 28,
+    question: 'Evaluate the following: undefined + 2',
+    answer: 'NaN',
+    options: ['Type Error', 'NaN', 'undefined', '2'],
+  },
+  {
+    numb: 29,
+    question: 'What does JSON stand for?',
+    answer: 'JavaScript Object Notation',
+    options: [
+      'JavaScript Oriented Notation',
+      'JavaScript Object Notation',
+      'JavaScript Online Notation',
+      'NOTA',
+    ],
+  },
+  {
+    numb: 30,
+    question: 'To convert string to number, which function do we use?',
+    answer: 'parseInt',
+    options: ['parseNumber', 'parseString', 'parseInt', 'parseDouble'],
+  },
 ];
